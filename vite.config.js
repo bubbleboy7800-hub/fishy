@@ -66,7 +66,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/': {
-        target: '',
+        target: 'http://localhost:3000',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/assets\/img/, '/img'),
       },
